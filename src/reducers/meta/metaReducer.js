@@ -1,0 +1,44 @@
+import {
+    FETCH_PHOTOS_PENDING,
+    FETCH_PHOTOS_FULFILLED,
+    FETCH_PHOTOS_REJECTED,
+    UPLOAD_PHOTO_PENDING,
+    UPLOAD_PHOTO_FULFILLED,
+    UPLOAD_PHOTO_REJECTED,
+    SHOW_FORM,
+    HIDE_FORM
+} from '../../actions/index';
+
+const initialState = {};
+const metaReducer = (state = initialState, action = {}) => {
+    switch (action.type) {
+        case SHOW_FORM:
+            return {
+                ...state,
+                showForm: true
+            };
+        case HIDE_FORM:
+            return {
+                ...state,
+                showForm: false
+            };
+        case FETCH_PHOTOS_PENDING:
+        case UPLOAD_PHOTO_PENDING:
+            return {
+                ...state,
+                isLoading: true
+            };
+        case FETCH_PHOTOS_FULFILLED:
+        case FETCH_PHOTOS_REJECTED:
+        case UPLOAD_PHOTO_FULFILLED:
+        case UPLOAD_PHOTO_REJECTED:
+            return {
+                ...state,
+                isLoading: false
+            };
+        default:
+            return state;
+    }
+};
+
+export default metaReducer;

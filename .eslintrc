@@ -25,16 +25,20 @@
         "max-statements": [2, 17],
         "max-len": [2, 150],
         "max-params": [2, 4],
+        "no-underscore-dangle": 0,
         "comma-dangle": ["error", "never"],
         "space-before-function-paren": [2, { "anonymous": "never", "named": "never" }],
         "func-names": ["error", "never"],
         "arrow-parens": ["error", "as-needed"],
         "import/no-named-as-default": 0,
         "import/no-extraneous-dependencies": 0,
+        "import/prefer-default-export": 0,
         "react/jsx-indent": ["error", 4],
         "react/jsx-indent-props": ["error", 4],
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/require-default-props": 0,
-        "react/forbid-prop-types": 0
+        "react/forbid-prop-types": 0,
+        "react/prefer-stateless-function": 0,
+        "react/no-array-index-key": 0
     }
 }

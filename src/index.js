@@ -1,12 +1,15 @@
 import React from 'react';
-import App from './App';
 import ReactDOM from 'react-dom';
-import store from './store/storeConfigure';
-import registerServiceWorker from './registerServiceWorker';
-
-import './index.css';
-
+import firebase from 'firebase';
 import { Provider } from 'react-redux';
+import 'react-toastify/dist/ReactToastify.css';
+
+import App from './App';
+import './index.css';
+import store from './store/storeConfigure';
+import firebaseConfig from './config/firebaseConfig.json';
+
+firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
     <Provider store={store}>
@@ -14,4 +17,3 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 );
-registerServiceWorker();

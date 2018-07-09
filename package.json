@@ -3,22 +3,36 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@material-ui/core": "^1.3.1",
+        "@material-ui/icons": "^1.1.0",
+        "firebase": "^5.2.0",
         "lodash": "^4.17.10",
         "react": "^16.4.1",
         "react-dom": "^16.4.1",
         "react-redux": "^5.0.7",
         "react-scripts": "1.1.4",
+        "react-toastify": "^4.1.0",
         "redux": "^4.0.0",
         "redux-devtools-extension": "^2.13.5",
+        "redux-promise-middleware": "^5.1.1",
         "redux-thunk": "^2.3.0"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject"
+        "prettier": "prettier --write 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --fix . --ext .js,.jsx src"
     },
     "devDependencies": {
+        "eslint": "^4.17.0",
+        "eslint-config-airbnb": "^16.1.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-loader": "^1.6.1",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-jsx-a11y": "^6.0.3",
+        "eslint-plugin-prettier": "^2.6.0",
+        "eslint-plugin-react": "^7.6.1",
+        "prettier": "^1.13.7",
         "redux-logger": "^3.0.6"
     }
 }

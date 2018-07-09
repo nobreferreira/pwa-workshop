@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import testReducer from './test/testReducer';
+import photosReducer from './photos/photosReducer';
+import metaReducer from './meta/metaReducer';
 
 const rootReducer = combineReducers({
-    test: testReducer
+    photos: photosReducer,
+    meta: metaReducer
 });
 
 export default rootReducer;
