@@ -8,6 +8,8 @@ import App from './App';
 import './index.css';
 import store from './store/storeConfigure';
 import firebaseConfig from './config/firebaseConfig.json';
+import registerServiceWorker from './registerServiceWorker';
+
 
 firebase.initializeApp(firebaseConfig);
 
@@ -17,3 +19,5 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 );
+
+registerServiceWorker();
