@@ -25,6 +25,7 @@ self.addEventListener('activate', () => self.clients.claim());
 //     }
 // };
 
+
 const fetchFirst = async event => {
     const { request } = event;
     const cache = await caches.open(CACHE_NAME);
