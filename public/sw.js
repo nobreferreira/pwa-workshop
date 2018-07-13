@@ -25,7 +25,6 @@ self.addEventListener('activate', () => self.clients.claim());
 //     }
 // };
 
-
 const fetchFirst = async event => {
     const { request } = event;
     const cache = await caches.open(CACHE_NAME);
@@ -45,4 +44,24 @@ self.addEventListener('fetch', event => {
         // event.respondWith(cacheFirst(event));
         event.respondWith(fetchFirst(event));
     }
+});
+
+self.addEventListener('push', event => {
+    const notification = event.data.json();
+    event.waitUntil(self.registration.showNotification(notification.title, notification));
+});
+
+self.addEventListener('notificationclick', event => {
+    event.notification.close();
+    // This looks to see if there is already an open window and
+    // focuses if it is
+    event.waitUntil(
+        clients.matchAll().then(clientList => {
+            for (let i = 0; i < clientList.length; i += 1) {
+                const client = clientList[i];
+                return client.navigate('/');
+            }
+            if (clients.openWindow) return clients.openWindow('/');
+        })
+    );
 });
