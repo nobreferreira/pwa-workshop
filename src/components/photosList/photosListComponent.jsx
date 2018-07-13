@@ -8,8 +8,10 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
+import IconButton from '@material-ui/core/IconButton';
+import DeleteIcon from '@material-ui/icons/Delete';
 import { toast } from 'react-toastify';
-import { fetchPhotos } from '../../actions/photosActions';
+import { fetchPhotos, removePhoto } from '../../actions/photosActions';
 import { showForm } from '../../actions/metaActions';
 import { getAllPhotos } from '../../selectors/photosSelector';
 import { getShowForm, getIsLoading } from '../../selectors/metaSelector';
@@ -32,6 +34,17 @@ export class PhotosList extends React.Component {
         }
     };
 
+    handleRemovePhoto = photoId => {
+        this.props
+            .removePhoto(photoId)
+            .then(() => {
+                this.props.fetchPhotos();
+            })
+            .catch(() => {
+                toast.error('Something went wrong!', toastConfig);
+            });
+    };
+
     render() {
         const { classes, isFormVisible, isLoading } = this.props;
 
@@ -46,6 +59,14 @@ export class PhotosList extends React.Component {
                             <GridListTileBar
                                 title={photo.fields.photoDesc.stringValue}
                                 subtitle={<span>by: {photo.fields.author.stringValue}</span>}
+                                actionIcon={
+                                    <IconButton
+                                        className={classes.icon}
+                                        onClick={() => this.handleRemovePhoto(photo.name)}
+                                    >
+                                        <DeleteIcon />
+                                    </IconButton>
+                                }
                             />
                         </GridListTile>
                     ))}
@@ -70,6 +91,7 @@ PhotosList.propTypes = {
     isFormVisible: PropTypes.bool.isRequired,
     isLoading: PropTypes.bool.isRequired,
     fetchPhotos: PropTypes.func.isRequired,
+    removePhoto: PropTypes.func.isRequired,
     showForm: PropTypes.func.isRequired
 };
 
@@ -89,6 +111,7 @@ const mapDispatchToProps = dispatch => ({
     ...bindActionCreators(
         {
             fetchPhotos,
+            removePhoto,
             showForm
         },
         dispatch

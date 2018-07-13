@@ -8,7 +8,7 @@ export default theme => ({
         margin: '0.3em'
     },
     icon: {
-        color: 'rgba(255, 255, 255, 0.54)'
+        color: 'rgba(255, 0, 0, 1)'
     },
     button: {
         position: 'fixed',

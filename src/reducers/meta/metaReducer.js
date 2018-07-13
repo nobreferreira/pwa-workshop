@@ -5,6 +5,9 @@ import {
     UPLOAD_PHOTO_PENDING,
     UPLOAD_PHOTO_FULFILLED,
     UPLOAD_PHOTO_REJECTED,
+    DELETE_PHOTO_PENDING,
+    DELETE_PHOTO_FULFILLED,
+    DELETE_PHOTO_REJECTED,
     SHOW_FORM,
     HIDE_FORM
 } from '../../actions/index';
@@ -24,6 +27,7 @@ const metaReducer = (state = initialState, action = {}) => {
             };
         case FETCH_PHOTOS_PENDING:
         case UPLOAD_PHOTO_PENDING:
+        case DELETE_PHOTO_PENDING:
             return {
                 ...state,
                 isLoading: true
@@ -32,6 +36,8 @@ const metaReducer = (state = initialState, action = {}) => {
         case FETCH_PHOTOS_REJECTED:
         case UPLOAD_PHOTO_FULFILLED:
         case UPLOAD_PHOTO_REJECTED:
+        case DELETE_PHOTO_FULFILLED:
+        case DELETE_PHOTO_REJECTED:
             return {
                 ...state,
                 isLoading: false

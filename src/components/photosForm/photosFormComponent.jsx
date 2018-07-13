@@ -27,6 +27,7 @@ export class PhotosForm extends React.Component {
             this.props
                 .submitPhoto({ author, photoDesc, photo })
                 .then(() => {
+                    this.props.hideForm();
                     this.props.fetchPhotos();
                 })
                 .catch(() => {
