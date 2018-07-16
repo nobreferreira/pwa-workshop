@@ -65,3 +65,18 @@ self.addEventListener('notificationclick', event => {
         })
     );
 });
+
+const internetConnectivityCheck = () =>
+    new Promise(async (resolve, reject) => {
+        if (navigator.onLine) {
+            await self.registration.showNotification('PWA Workshop is Online!!');
+            return resolve();
+        }
+        return reject();
+    });
+
+self.addEventListener('sync', event => {
+    if (event.tag === 'check-connectivity') {
+        event.waitUntil(internetConnectivityCheck());
+    }
+});
