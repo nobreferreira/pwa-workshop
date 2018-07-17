@@ -97,3 +97,6 @@ You can check if the cache is working by disabling the network connectivity in t
 Useful links:
 
 - Background Sync [https://developers.google.com/web/updates/2015/12/background-sync](https://developers.google.com/web/updates/2015/12/background-sync)
+
+### Workshop survey
+[https://goo.gl/forms/rISxZ3v2fVGCa2gf2](https://goo.gl/forms/rISxZ3v2fVGCa2gf2)

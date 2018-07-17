@@ -1,0 +1,314 @@
+{
+    "g01": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyBZYpV0zTfb2Rv5mP2dZlfX6B1OicCLupU",
+            "authDomain": "pwa-ppb-ws-01.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-01.firebaseio.com",
+            "projectId": "pwa-ppb-ws-01",
+            "storageBucket": "pwa-ppb-ws-01.appspot.com",
+            "messagingSenderId": "101471697141"
+        },
+        "projectName": "pwa-ppb-ws-01",
+        "fcmId": 101471697141,
+        "fcmServerKey": "AIzaSyA6iRGaPkiZlM68w0XhTkn0sW4bSPOO7J8"
+    },
+    "g02": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyB9euaYxwok2z9jTRq8xqIJ8W8Zaf-xGjI",
+            "authDomain": "pwa-ppb-ws-02.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-02.firebaseio.com",
+            "projectId": "pwa-ppb-ws-02",
+            "storageBucket": "pwa-ppb-ws-02.appspot.com",
+            "messagingSenderId": "244617108799"
+        },
+        "projectName": "pwa-ppb-ws-02",
+        "fcmId": 244617108799,
+        "fcmServerKey": "AIzaSyBnnM7DJaB1BdjoVUsDLI2j_hAQar-JjBc"
+    },
+    "g03": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyDYHVn5D8enxIBDVaJVkulF6MrqfRmDQEs",
+            "authDomain": "pwa-ppb-ws-03.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-03.firebaseio.com",
+            "projectId": "pwa-ppb-ws-03",
+            "storageBucket": "pwa-ppb-ws-03.appspot.com",
+            "messagingSenderId": "426319648921"
+        },
+        "projectName": "pwa-ppb-ws-03",
+        "fcmId": 426319648921,
+        "fcmServerKey": "AIzaSyCPeakAEhh3fdmrMsWM8WKSWsf95Ofag8o"
+    },
+    "g04": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyB26Q5TzOJZfvZFQjdQ5X0HT_pshTWy8UE",
+            "authDomain": "pwa-ppb-ws-04.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-04.firebaseio.com",
+            "projectId": "pwa-ppb-ws-04",
+            "storageBucket": "pwa-ppb-ws-04.appspot.com",
+            "messagingSenderId": "904315117903"
+        },
+        "projectName": "pwa-ppb-ws-04",
+        "fcmId": 904315117903,
+        "fcmServerKey": "AIzaSyCZCjL28JnvH7MTA2fhUSi2l1posYtlolM"
+    },
+    "g05": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyDw-8srdB1SI1nBNL8y1nwaBNNFOuoueeQ",
+            "authDomain": "pwa-ppb-ws-05.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-05.firebaseio.com",
+            "projectId": "pwa-ppb-ws-05",
+            "storageBucket": "pwa-ppb-ws-05.appspot.com",
+            "messagingSenderId": "287538046071"
+        },
+        "projectName": "pwa-ppb-ws-05",
+        "fcmId": 287538046071,
+        "fcmServerKey": "AIzaSyA8GHYSjM8nhM5jCJH6s9XQh4N8pDTkJCI"
+    },
+    "g06": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyCp03bNSZUt1SyH5brOCYD5PkgXm4Gjuwo",
+            "authDomain": "pwa-ppb-ws-06.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-06.firebaseio.com",
+            "projectId": "pwa-ppb-ws-06",
+            "storageBucket": "pwa-ppb-ws-06.appspot.com",
+            "messagingSenderId": "134385124503"
+        },
+        "projectName": "pwa-ppb-ws-06",
+        "fcmId": 134385124503,
+        "fcmServerKey": "AIzaSyDm2cZyCpTdpIiQWzjxvde153t0J_j9oeY"
+    },
+    "g07": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyBfmnQDvHHp9ax32pf-40hMeAGuAioiLrY",
+            "authDomain": "pwa-ppb-ws-07.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-07.firebaseio.com",
+            "projectId": "pwa-ppb-ws-07",
+            "storageBucket": "pwa-ppb-ws-07.appspot.com",
+            "messagingSenderId": "881123353681"
+        },
+        "projectName": "pwa-ppb-ws-07",
+        "fcmId": 881123353681,
+        "fcmServerKey": "AIzaSyANjBvqbA8C2w9Snl8k5Xb2J0qf143DM7U"
+    },
+    "g08": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyCkfpZvAy_rwbUVVkkJeECY0V5FFrjh2ig",
+            "authDomain": "pwa-ppb-ws-08.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-08.firebaseio.com",
+            "projectId": "pwa-ppb-ws-08",
+            "storageBucket": "pwa-ppb-ws-08.appspot.com",
+            "messagingSenderId": "927655702504"
+        },
+        "projectName": "pwa-ppb-ws-08",
+        "fcmId": 927655702504,
+        "fcmServerKey": "AIzaSyCelxl16CFO6vOsBCq_f5fpNQS4kfZSTpQ"
+    },
+    "g09": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyAhv8TadkU-JH2IIwaZ39AJoUzfUg2_fX4",
+            "authDomain": "pwa-ppb-ws-09.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-09.firebaseio.com",
+            "projectId": "pwa-ppb-ws-09",
+            "storageBucket": "pwa-ppb-ws-09.appspot.com",
+            "messagingSenderId": "1044696736262"
+        },
+        "projectName": "pwa-ppb-ws-09",
+        "fcmId": 1044696736262,
+        "fcmServerKey": "AIzaSyDfVUkSvubni-HaAWQ3_Fw_lN8_Lob3yTo"
+    },
+    "g10": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyCsE10sO9VunzD7BtWQLlBjsX7rZ01-ZFs",
+            "authDomain": "pwa-ppb-ws-10.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-10.firebaseio.com",
+            "projectId": "pwa-ppb-ws-10",
+            "storageBucket": "pwa-ppb-ws-10.appspot.com",
+            "messagingSenderId": "298754443302"
+        },
+        "projectName": "pwa-ppb-ws-10",
+        "fcmId": 298754443302,
+        "fcmServerKey": "AIzaSyAEXhPWNkeGiPFKqtfAmxOjXlK7h83sb3E"
+    },
+    "g11": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyBcPwAyX5afGuvkhvy3vpCEQdT_CRBU7ck",
+            "authDomain": "pwa-ppb-ws-11.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-11.firebaseio.com",
+            "projectId": "pwa-ppb-ws-11",
+            "storageBucket": "pwa-ppb-ws-11.appspot.com",
+            "messagingSenderId": "292405093637"
+        },
+        "projectName": "pwa-ppb-ws-11",
+        "fcmId": 292405093637,
+        "fcmServerKey": "AIzaSyBFXaaJRczTGeCn5ps8XAiEF3FW_Mf9-Ac"
+    },
+    "g12": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyBWhieiYhDJghmjNrwJR6DOocXbLYNrU-Y",
+            "authDomain": "pwa-ppb-ws-12.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-12.firebaseio.com",
+            "projectId": "pwa-ppb-ws-12",
+            "storageBucket": "pwa-ppb-ws-12.appspot.com",
+            "messagingSenderId": "559754941427"
+        },
+        "projectName": "pwa-ppb-ws-12",
+        "fcmId": 559754941427,
+        "fcmServerKey": "AIzaSyDh-Wz2tRXk_k7BYMSJf_WvEO-QB2zanew"
+    },
+    "g13": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyDKJGcOoTZCodURnWdmyxwdFv-C2THXeN0",
+            "authDomain": "pwa-ppb-ws-13.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-13.firebaseio.com",
+            "projectId": "pwa-ppb-ws-13",
+            "storageBucket": "pwa-ppb-ws-13.appspot.com",
+            "messagingSenderId": "995228533141"
+        },
+        "projectName": "pwa-ppb-ws-13",
+        "fcmId": 995228533141,
+        "fcmServerKey": "AIzaSyDjHqtWHo-XlHp-VT2GSIX6eBtSP1_JTpk"
+    },
+    "g14": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyDihpNkGxKe2VMydedUzhbIx2jl-wff1_A",
+            "authDomain": "pwa-ppb-ws-14.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-14.firebaseio.com",
+            "projectId": "pwa-ppb-ws-14",
+            "storageBucket": "pwa-ppb-ws-14.appspot.com",
+            "messagingSenderId": "703968536845"
+        },
+        "projectName": "pwa-ppb-ws-14",
+        "fcmId": 703968536845,
+        "fcmServerKey": "AIzaSyCe5veVgGa06dIVSNnKrDGfINdLCGbc7Co"
+    },
+    "g15": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyCPuPXLgJ4PN4OnpSvjXnjHsxYRJLKdxUo",
+            "authDomain": "pwa-ppb-ws-15.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-15.firebaseio.com",
+            "projectId": "pwa-ppb-ws-15",
+            "storageBucket": "pwa-ppb-ws-15.appspot.com",
+            "messagingSenderId": "963258682521"
+        },
+        "projectName": "pwa-ppb-ws-15",
+        "fcmId": 963258682521,
+        "fcmServerKey": "AIzaSyAfKVmlulwO6ilv4L3s1QvwTVCLpsokOv8"
+    },
+    "g16": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyB5DdD7Hbn4ijFgb4Z1ziOsBZH10l90amY",
+            "authDomain": "pwa-ppb-ws-16.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-16.firebaseio.com",
+            "projectId": "pwa-ppb-ws-16",
+            "storageBucket": "pwa-ppb-ws-16.appspot.com",
+            "messagingSenderId": "864232793491"
+        },
+        "projectName": "pwa-ppb-ws-16",
+        "fcmId": 864232793491,
+        "fcmServerKey": "AIzaSyDYZLnfa6wkG9M6gE4s72_hfRHAOx36wQg"
+    },
+    "g17": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyCRh3bC6mNJ1yHWvSa8MEfC4U_yzq_W7G8",
+            "authDomain": "pwa-ppb-ws-17.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-17.firebaseio.com",
+            "projectId": "pwa-ppb-ws-17",
+            "storageBucket": "pwa-ppb-ws-17.appspot.com",
+            "messagingSenderId": "924935322154"
+        },
+        "projectName": "pwa-ppb-ws-17",
+        "fcmId": 924935322154,
+        "fcmServerKey": "AIzaSyA2iov89uNg7K5nP6gCnnkm1MOlyTDjYZs"
+    },
+    "g18": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyCAbPUQk2yKIpJpVZ4y0YTjchBHejJlNW4",
+            "authDomain": "pwa-ppb-ws-18.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-18.firebaseio.com",
+            "projectId": "pwa-ppb-ws-18",
+            "storageBucket": "pwa-ppb-ws-18.appspot.com",
+            "messagingSenderId": "477081069617"
+        },
+        "projectName": "pwa-ppb-ws-18",
+        "fcmId": 477081069617,
+        "fcmServerKey": "AIzaSyBJfNids3pL8_0tQU898MkIrJJsRgS6epA"
+    },
+    "g19": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyBLD4FRY8rZX-XClmKeNtdAgBZrHs9DvFU",
+            "authDomain": "pwa-ppb-ws-19.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-19.firebaseio.com",
+            "projectId": "pwa-ppb-ws-19",
+            "storageBucket": "pwa-ppb-ws-19.appspot.com",
+            "messagingSenderId": "132149527897"
+        },
+        "projectName": "pwa-ppb-ws-19",
+        "fcmId": 132149527897,
+        "fcmServerKey": "AIzaSyAtwFJhYX-Dp_2HvwLT8hNIwHHtLr9tf24"
+    },
+    "g20": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyAZ_RFvUhGTJS2W2VcrhFbBrLQZ0j7HrB8",
+            "authDomain": "pwa-ppb-ws-20.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-20.firebaseio.com",
+            "projectId": "pwa-ppb-ws-20",
+            "storageBucket": "pwa-ppb-ws-20.appspot.com",
+            "messagingSenderId": "886288921690"
+        },
+        "projectName": "pwa-ppb-ws-20",
+        "fcmId": 886288921690,
+        "fcmServerKey": "AIzaSyC2RodEj9lkpTKEBl5RGPd2d7YoQUJ_yyk"
+    },
+    "g21": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyCiW7we8DmSIlBrXheDo6zXZY42YSJRudA",
+            "authDomain": "pwa-ppb-ws-21.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-21.firebaseio.com",
+            "projectId": "pwa-ppb-ws-21",
+            "storageBucket": "pwa-ppb-ws-21.appspot.com",
+            "messagingSenderId": "537172174784"
+        },
+        "projectName": "pwa-ppb-ws-21",
+        "fcmId": 537172174784,
+        "fcmServerKey": "AIzaSyBGtEiwY1FLPaTONNAxKhgVkJ32FVbq3t0"
+    },
+    "g22": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyCRh4YhF2YFIM-yt0GJzmoVEBYJin_cLNA",
+            "authDomain": "pwa-ppb-ws-22.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-22.firebaseio.com",
+            "projectId": "pwa-ppb-ws-22",
+            "storageBucket": "pwa-ppb-ws-22.appspot.com",
+            "messagingSenderId": "56500177901"
+        },
+        "projectName": "pwa-ppb-ws-22",
+        "fcmId": 56500177901,
+        "fcmServerKey": "AIzaSyA91PMRlnFKGL6XmsMnQDr4SWo81XUxle8"
+    },
+    "g23": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyCDua0vKVpUlnVADUB1BlB8NrkwGcVNjFE",
+            "authDomain": "pwa-ppb-ws-23.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-23.firebaseio.com",
+            "projectId": "pwa-ppb-ws-23",
+            "storageBucket": "pwa-ppb-ws-23.appspot.com",
+            "messagingSenderId": "454629549314"
+        },
+        "projectName": "pwa-ppb-ws-23",
+        "fcmId": 454629549314,
+        "fcmServerKey": "AIzaSyBHC8dhK1bPqey8x5BAtalzNvyA42uFPCw"
+    },
+    "g24": {
+        "firebaseConf": {
+            "apiKey": "AIzaSyAiDl-UQuDHu2rUvrSRzTA7LAYkqesGWXo",
+            "authDomain": "pwa-ppb-ws-24.firebaseapp.com",
+            "databaseURL": "https://pwa-ppb-ws-24.firebaseio.com",
+            "projectId": "pwa-ppb-ws-24",
+            "storageBucket": "pwa-ppb-ws-24.appspot.com",
+            "messagingSenderId": "446786278004"
+        },
+        "projectName": "pwa-ppb-ws-24",
+        "fcmId": 446786278004,
+        "fcmServerKey": "AIzaSyDGtDSX_epXAkrlzVf3_20QLSbSj5FRF9Y"
+    }
+}
