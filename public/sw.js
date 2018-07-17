@@ -46,22 +46,8 @@ self.addEventListener('fetch', event => {
     }
 });
 
-self.addEventListener('push', event => {
-    const notification = event.data.json();
-    event.waitUntil(self.registration.showNotification(notification.title, notification));
-});
+// TODO - add 'push' event listner and show notifications
 
-self.addEventListener('notificationclick', event => {
-    event.notification.close();
-    // This looks to see if there is already an open window and
-    // focuses if it is
-    event.waitUntil(
-        clients.matchAll().then(clientList => {
-            for (let i = 0; i < clientList.length; i += 1) {
-                const client = clientList[i];
-                return client.navigate('/');
-            }
-            if (clients.openWindow) return clients.openWindow('/');
-        })
-    );
-});
+// TODO - add 'notificationclick' event listner and navigate to client
+//        Look to see if there is already an open window and
+//        navigate if there is else open new window
