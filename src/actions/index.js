@@ -15,3 +15,6 @@ export const DELETE_PHOTO_REJECTED = 'DELETE_PHOTO_REJECTED';
 
 export const SHOW_FORM = 'SHOW_FORM';
 export const HIDE_FORM = 'HIDE_FORM';
+
+export const NETWORK_ONLINE = 'NETWORK_ONLINE';
+export const NETWORK_OFFLINE = 'NETWORK_OFFLINE';

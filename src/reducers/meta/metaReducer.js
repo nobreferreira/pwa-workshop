@@ -9,7 +9,9 @@ import {
     DELETE_PHOTO_FULFILLED,
     DELETE_PHOTO_REJECTED,
     SHOW_FORM,
-    HIDE_FORM
+    HIDE_FORM,
+    NETWORK_OFFLINE,
+    NETWORK_ONLINE
 } from '../../actions/index';
 
 const initialState = {};
@@ -24,6 +26,16 @@ const metaReducer = (state = initialState, action = {}) => {
             return {
                 ...state,
                 showForm: false
+            };
+        case NETWORK_OFFLINE:
+            return {
+                ...state,
+                isOnline: false
+            };
+        case NETWORK_ONLINE:
+            return {
+                ...state,
+                isOnline: true
             };
         case FETCH_PHOTOS_PENDING:
         case UPLOAD_PHOTO_PENDING:

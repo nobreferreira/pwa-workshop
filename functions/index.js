@@ -3,7 +3,7 @@ const admin = require('firebase-admin');
 const webpush = require('web-push');
 
 options = {
-    gcmAPIKey: 'AIzaSyAqp27jLTPekMxTjOi5lGX-kXGrQa7duKM',
+    gcmAPIKey: 'gcmServerKey',
     TTL: 60
 };
 admin.initializeApp();

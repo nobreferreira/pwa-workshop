@@ -65,3 +65,17 @@ self.addEventListener('notificationclick', event => {
         })
     );
 });
+
+const internetConnectivityCheck = () =>
+    new Promise(async (resolve, reject) => {
+        // TODO: Check the online status of the browser (navigator.onLine)
+        // TODO: Example https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine
+
+        // TODO: Send notification if browser is online (self.registration.showNotification)
+    });
+
+self.addEventListener('sync', event => {
+    // TODO: Check if event.tag is 'check-connectivity'
+    // TODO: Call event.waitUntil with internetConnectivityCheck
+    // TODO: Example https://developers.google.com/web/updates/2015/12/background-sync
+});

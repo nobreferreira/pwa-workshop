@@ -10,11 +10,12 @@ import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
+import NotificationIcon from '@material-ui/icons/Notifications';
 import { toast } from 'react-toastify';
 import { fetchPhotos, removePhoto } from '../../actions/photosActions';
-import { showForm } from '../../actions/metaActions';
+import { showForm, networkOffline, networkOnline } from '../../actions/metaActions';
 import { getAllPhotos } from '../../selectors/photosSelector';
-import { getShowForm, getIsLoading } from '../../selectors/metaSelector';
+import { getShowForm, getIsLoading, getIsOnline } from '../../selectors/metaSelector';
 import PhotosForm from '../photosForm/photosFormComponent';
 import LoadingOverlay from '../loadingOverlay/loadingOverlayComponent';
 import photosListStyles from './photosListStyles';
@@ -26,6 +27,8 @@ export class PhotosList extends React.Component {
         this.props.fetchPhotos().catch(() => {
             toast.error('Something went wrong!', toastConfig);
         });
+        // TODO: Add event listeners to whe window events offline and online
+        // TODO: And call the functions this.props.networkOffline and this.props.networkOnline
     }
 
     handleShowForm = () => {
@@ -45,8 +48,24 @@ export class PhotosList extends React.Component {
             });
     };
 
+    handleNetworkNotification = () => {
+        Notification.requestPermission(result => {
+            if (result === 'granted') {
+                navigator.serviceWorker.ready.then(registration => {
+                    // TODO: Check if sync is in registration
+                    // TODO: Register sync 'check-connectivity'
+                });
+            }
+        });
+    };
+
     render() {
-        const { classes, isFormVisible, isLoading } = this.props;
+        const {
+            classes,
+            isFormVisible,
+            isLoading,
+            isOnline
+        } = this.props;
 
         return (
             <div className={classes.root}>
@@ -60,6 +79,7 @@ export class PhotosList extends React.Component {
                                 title={photo.fields.photoDesc.stringValue}
                                 subtitle={<span>by: {photo.fields.author.stringValue}</span>}
                                 actionIcon={
+                                    isOnline &&
                                     <IconButton
                                         className={classes.icon}
                                         onClick={() => this.handleRemovePhoto(photo.name)}
@@ -71,15 +91,30 @@ export class PhotosList extends React.Component {
                         </GridListTile>
                     ))}
                 </GridList>
-                <Button
-                    variant="fab"
-                    color="primary"
-                    aria-label="add"
-                    className={classes.button}
-                    onClick={this.handleShowForm}
-                >
-                    <AddIcon />
-                </Button>
+                {
+                    isOnline &&
+                    <Button
+                        variant="fab"
+                        color="primary"
+                        aria-label="add"
+                        className={classes.button}
+                        onClick={this.handleShowForm}
+                    >
+                        <AddIcon />
+                    </Button>
+                }
+                {
+                    !isOnline &&
+                    <Button
+                        variant="fab"
+                        color="primary"
+                        aria-label="add"
+                        className={classes.button}
+                        onClick={this.handleNetworkNotification}
+                    >
+                        <NotificationIcon />
+                    </Button>
+                }
             </div>
         );
     }
@@ -90,8 +125,11 @@ PhotosList.propTypes = {
     photosList: PropTypes.array.isRequired,
     isFormVisible: PropTypes.bool.isRequired,
     isLoading: PropTypes.bool.isRequired,
+    isOnline: PropTypes.bool.isRequired,
     fetchPhotos: PropTypes.func.isRequired,
     removePhoto: PropTypes.func.isRequired,
+    networkOffline: PropTypes.func.isRequired,
+    networkOnline: PropTypes.func.isRequired,
     showForm: PropTypes.func.isRequired
 };
 
@@ -99,11 +137,13 @@ export const mapStateToProps = state => {
     const photosList = getAllPhotos(state);
     const isFormVisible = getShowForm(state);
     const isLoading = getIsLoading(state);
+    const isOnline = getIsOnline(state);
 
     return {
         photosList,
         isFormVisible,
-        isLoading
+        isLoading,
+        isOnline
     };
 };
 
@@ -112,7 +152,9 @@ const mapDispatchToProps = dispatch => ({
         {
             fetchPhotos,
             removePhoto,
-            showForm
+            showForm,
+            networkOffline,
+            networkOnline
         },
         dispatch
     )
