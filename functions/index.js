@@ -3,7 +3,7 @@ const admin = require('firebase-admin');
 const webpush = require('web-push');
 
 options = {
-    gcmAPIKey: '', // TODO - ADD gcmKey, also add gcm_sender_id in the manifest file
+    gcmAPIKey: 'gcmServerKey',
     TTL: 60
 };
 admin.initializeApp();

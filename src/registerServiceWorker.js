@@ -21,7 +21,7 @@ function getUploadBody(endpointValue, authValue, p256dhValue) {
 }
 
 const tokensUrl =
-    'https://firestore.googleapis.com/v1beta1/projects/pwa-blip-ws-XX/databases/(default)/documents/tokens/';
+    'https://firestore.googleapis.com/v1beta1/projects/pwa-blip-ws-00/databases/(default)/documents/tokens/';
 // TODO  - change the above URL to use your firebase config
 
 export default function register() {
