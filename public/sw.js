@@ -46,8 +46,14 @@ self.addEventListener('fetch', event => {
     }
 });
 
-// TODO - add 'push' event listner and show notifications
+self.addEventListener('push', event => {
+    // TODO - add 'push' event listener and show notifications
+});
 
-// TODO - add 'notificationclick' event listner and navigate to client
-//        Look to see if there is already an open window and
-//        navigate if there is else open new window
+self.addEventListener('notificationclick', event => {
+    event.notification.close();
+
+    // TODO - add 'notificationclick' event listener and navigate to client
+    //        Look to see if there is already an open window and
+    //        navigate if there is else open new window
+});

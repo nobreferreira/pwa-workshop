@@ -31,6 +31,9 @@ exports.sendImageNotification = functions.firestore.document('/photos/{photoUid}
     return Promise.all([newImagedata, tokens])
         .then(values => {
             const [newImagedata, tokens] = values;
+            const badge =
+                'https://firebasestorage.googleapis.com/v0/b/pwa-blip-ws-00.appspot.com/o/' +
+                'icons%2Fblip-icon-192.png?alt=media&token=abc33849-53f9-4199-853f-e603face7368';
 
             // TODO - Create notification payload and send to all clients using the tokens and webPush
             //

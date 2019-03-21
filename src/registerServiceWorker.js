@@ -28,18 +28,29 @@ export default function register() {
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('sw.js');
 
-        // navigator.serviceWorker.ready (start from this line)
-
-        // TODO - subscribe to push service
-        // https://developer.mozilla.org/en-US/docs/Web/API/PushManager/subscribe
-
-        // TODO save subscription firebase
-        // https://developer.mozilla.org/en-US/docs/Web/API/PushSubscription
-        // Tips:
-        // - use toJSON()
-        // - concat the tokensUrl and part of the subscription endpoint to have a
-        //   unique ID for the subscription tocken
-        // - Use method PATCH in order to create or update if the token already exists
-        // - use the function getUploadBody to get the PATCH BODY
+        navigator.serviceWorker.ready
+            .then(serviceWorkerRegistration =>
+                // userVisibleOnly: A boolean indicating that the returned push subscription
+                // will only be used for messages whose effect is made visible to the user.
+                serviceWorkerRegistration.pushManager.subscribe({ userVisibleOnly: true })
+            )
+            .then(
+                pushSubscription => {
+                    const subscription = pushSubscription.toJSON();
+                    const url = tokensUrl.concat(subscription.endpoint.slice(-20));
+                    fetch(url, {
+                        method: 'PATCH',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(
+                            getUploadBody(subscription.endpoint, subscription.keys.auth, subscription.keys.p256dh)
+                        )
+                    }).catch(error => console.error('Subscribing to notifications failure', error));
+                },
+                error =>
+                    console.log(
+                        `User rejected notifications permission or there is a problem with secure origins: ${error}`
+                    )
+            )
+            .catch(error => console.log('Error: ', error));
     }
 }
